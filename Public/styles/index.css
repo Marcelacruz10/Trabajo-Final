@@ -1,0 +1,16 @@
+.audiovisual {
+	width: 200px;
+}
+.redes-sociales img {
+	width: 50px;
+}
+iframe {
+	width: 100%;
+	aspect-ratio: 1 / 0.8;
+}
+footer ul {
+	list-style-type: none;
+}
+footer a {
+	color: black;
+}
