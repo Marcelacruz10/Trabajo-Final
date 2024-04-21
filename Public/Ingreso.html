@@ -1,18 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Ingreso</title>
+    <link rel="stylesheet" href="./styles/ingreso.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"/>
 <body>
-    <h1> soy la pagina de ingreso</h1>
-        <!--hacer esta pagina segun el diseño de la pagina principal, y debe tener:
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid miMenuNavehacion">
+            <a class="navbar-brand" href="./index.html">
+                <img class="logo" src="./assets/logo.png" alt="logo" />
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active text-white" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link text-white" href="#">Quienes somos</a>
+                    <a class="nav-link text-white" href="#">Contacto</a>
+                    <a class="nav-link text-white" href="ingreso.html">Ingreso</a>
+                    <a class="nav-link text-white" href="registro.html">Registrate</a>
+                    <a class="nav-link text-white" href="pagina.html">Bullying</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="formulario">
+        <h1>Inicio de Sesion</h1>
+        <form method="post">
+            <div class="username">
+                <input type="text" required>
+                <label>correo electronico</label>
+            </div>
+            <div class="username">
+                <input type="password" required>
+                <label>Contraseña</label>
+            </div>
+            <div class="recordar">¿Olvidaste tu contraseña?</div>
+            <input type="submit" value="Iniciar">
+            <div class="registrarse">
+                No tienes cuenta? <a href="registro.html">registrate!</a>
+            </div>
+        </form>
+    </div>
+<body>
+<html>
+         <!--hacer esta pagina segun el diseño de la pagina principal, y debe tener:
             menu de navegación
-    un formulario de regisgtro:
-    
-    -pregutnar correo electronico 
+    un formulario de registro:
+    -preguntar correo electronico 
     -preguntar al usuario su contraseña
-    un Boton de regisgtro
-</body>
-</html>
+    un Boton de registro
