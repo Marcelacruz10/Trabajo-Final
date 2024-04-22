@@ -10,49 +10,39 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 200 px;
+    width: 500 px;
     background: white;
-    border-radius: 15px;
+    border-radius: 25px;
     }
 
 .formulario h1{
     text-align: center;
-    padding: 0 0 50px 0;
-    border-bottom: 2px solid black(190, 48, 32);
+    padding: 10px 0 40px 0;
+    border-bottom: 20px solid black(190, 48, 32);
     }
-
     .formulario form{
-        padding: 0 50px;
+        padding: 20px 20px;
         box-sizing: border-box;
     }   
-
 form.usuario{
     position: relative;
-    border-bottom: 1px solid rgb(24, 24, 184);
-    margin: 30px 0;
+    border-bottom: 1px solid;
+    margin: 10px 10px;
     }
 
 .usuario input{
-    width: 100%;
-    padding: 0 5 px;
+    width: 90%;
+    padding: 20px  30px;
     height: 40px;
     font-size: 16px;
-    border: black;
-    background: none;
-    outline: black;
 }
-
 .usuario label{
-    position: absolute;
+    position: relative;
     top: 50%;
-    left: 5px;
+    left: 50px;
     color: #312ee4;
-    transform: translateY(50%);
     font-size: 16px;
-    pointer-events: none;
-    transition:.5s;
 }
-
 .usuario span::before{
 content: '';
 position: absolute;
@@ -61,20 +51,17 @@ left: 0;
 width: 100%;
 height: 2px;
 background: rgb(53, 41, 219);
-transition:.5s;
 }
-
 .usuario input:focus ~ label,
-.usuario input:focus ~ label {
+.usuario input:focus ~ label{
 top: -5px;
 color: #152ae4;
 }
 
 .usuario input:focus ~span::before,
-.usuario input:focus ~span::before {
+.usuario input:focus ~span::before{
     width: 100%;
 }
-
 .recordar{
     margin: -5px 0 20px 5px;
     color: blue;
@@ -88,16 +75,15 @@ color: #152ae4;
 input[type="submit"]{
     width: 100%;
     height: 50px;
-    border: 1px solid;
+    border: 5px solid;
     background: slateblue;
-    border-radius: 25px;
+    border-radius: 30px;
     font-size: 18px;
     color: white;
     cursor: pointer;
-    outline: none;
 }
 
-input[type="sunmit"]:hover{
+input[type="submit"]:hover{
     border-color: purple;
     transition:.5s;
 }
