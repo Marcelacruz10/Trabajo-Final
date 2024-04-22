@@ -2,8 +2,7 @@
 import express from "express"; 
 import path from "path"; 
 import dotenv from "dotenv";
-
-
+import conexionMongo from "./Src/config/basedatos.js";
 
 // 2. configurar nuestro servidor
 const app = express ();
@@ -11,6 +10,10 @@ const puerto = 9000;
 
 //2.1. configurar  las variables de entorno
 dotenv. config (); 
+
+//2.2. configurar conexión base de datos
+conexionMongo();
+
 //  ejecutamos la función de conexión de nuestra base de datos
 
 //2. establecer la conexión de front
@@ -24,6 +27,8 @@ app.use(express.json());
 app.get('/', (req,res) => {  
   res.sendFile(path.join(rutaPublica,"index.html"));
 });
+
+
 
 app.listen(puerto, () => {
   console.log(`El servidor está escuchando en http://localhost:${puerto}`);
