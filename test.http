@@ -1,15 +1,12 @@
 ### Obtener todos los usuarios
-GET http://localhost:3000/api//obtenerusuario
-
-
+GET http://localhost:9000/api/obtenerUsuario
 
 ### Crear producto
-POST http://localhost:3000/api/crearUsuario
-Content-Type: application/json
+POST http://localhost:9000/api/crearUsuario
+
 
 ### Actualizar un usuario por ID
-PUT http://localhost:3000/api//actualizarUsuario/:_id
-Content-Type: application/json
+PUT http://localhost:9000/api/modificarUsuario/:_id
 
 ### Eliminar un usuario por ID
-DELETE http://localhost:3000/api/eliminarUsuario/:_id
+DELETE http://localhost:9000/api/eliminarusuario/:_id

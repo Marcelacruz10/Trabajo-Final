@@ -3,6 +3,7 @@ import express from "express";
 import path from "path"; 
 import dotenv from "dotenv";
 import conexionMongo from "./Src/config/basedatos.js";
+import usuarioRouter from "./Src/routes/user.routes.js";
 
 // 2. configurar nuestro servidor
 const app = express ();
@@ -21,8 +22,8 @@ conexionMongo();
 const rutaPublica = path.join(process.cwd(), "Public");
 
 app.use(express.static(rutaPublica));
-
 app.use(express.json());
+app.use("/api",usuarioRouter);
 
 app.get('/', (req,res) => {  
   res.sendFile(path.join(rutaPublica,"index.html"));
