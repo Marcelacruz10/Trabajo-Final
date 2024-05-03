@@ -17,7 +17,7 @@ const mostrarUsuarios = async () => {
 function mostrarTabla(usuarios) {
     const tabla = document.getElementById("miTabla");
     tabla.innerHTML = "";
-    usuarios.forEarch(usuario => {
+    usuarios.forEach(usuario => {
         //por cada usuario (forEach) usuario, me va a crear una fila en la tabla
         tabla.innerHTML += `
             <tr>
