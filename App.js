@@ -4,11 +4,11 @@ import path from "path";
 import dotenv from "dotenv";
 import conexionMongo from "./Src/config/basedatos.js";
 import usuarioRouter from "./Src/routes/user.routes.js";
-
+import cors from "cors";
 // 2. configurar nuestro servidor
 const app = express ();
 const puerto = 9000;
-
+app.use(cors());
 //2.1. configurar  las variables de entorno
 dotenv. config (); 
 
@@ -28,8 +28,6 @@ app.use("/api",usuarioRouter);
 app.get('/', (req,res) => {  
   res.sendFile(path.join(rutaPublica,"index.html"));
 });
-
-
 
 app.listen(puerto, () => {
   console.log(`El servidor está escuchando en http://localhost:${puerto}`);

@@ -6,11 +6,8 @@ body{
     height: 100vh;
 }
 .registro{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 500 px;
+    margin:100px auto;
+    width: 500px;
     background: white;
     border-radius: 25px;
 }
@@ -22,12 +19,19 @@ body{
 .registro form{
     padding: 20px 20px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-form.usuario{
-    position: relative;
-    border-bottom: 1px solid black;
-    margin: 20px 20px;
+.usuario{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 .usuario input{
     width: 85%;
     padding: 20px 30px;
@@ -37,7 +41,6 @@ form.usuario{
 .usuario label{
     position: relative;
     top: 50%;
-    left: 50px;
     color: #312ee4;
     font-size: 16px;
 }

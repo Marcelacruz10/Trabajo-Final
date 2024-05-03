@@ -4,20 +4,21 @@ import mongoose from 'mongoose';
 const schema =mongoose.Schema; 
 
 //creamos nuestor esquema de datos que es lo que vamos a guardar en nuesra base de datos
-const usuarioSchema =new schema({
+const usuarioSchema = new schema({
     nombreCompleto:{
-        Type: String
-
+        type: String,
+        required: true
     },
-    correo: {
-        type:String
-
+    correo:{
+        type:String,
+        required: true
     },
-    contraseña: {
-        type:String
-
+    contrasena:{
+        type:String,
+        required:true
     }
-})
+
+});
 //enviar plantlla (schema) a nuestra base de datos
 //crear nuestro modelo
 
